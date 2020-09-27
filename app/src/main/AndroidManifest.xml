@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="abhishek.com.medreminder">
+    <!-- Permission required to Waking Lock if device screen is off -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- to be activated service on boot is completed -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alarm_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/alarm_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".InfoActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="Info">
+
+        </activity>
+        <activity android:name=".UserProfileActivity" />
+
+        <activity android:name=".EnablePin" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".userLogin"
+            android:label="Welcome"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".userSetPIN"
+            android:label="Setting Up for First Time Use"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".userSetPIN0"
+            android:label="Enabling PIN"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".userOldPIN"
+            android:label="Change PIN"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".userNewPIN"
+            android:label="Change PIN"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".AddReminderActivity"
+            android:label="Add Reminder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".EditMedicine"
+            android:label="Edit Reminder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".CompleteMedicine"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".PasswordSettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".DummyDataActivity" /> -->
+
+        <activity
+            android:name=".NotificationInbox"
+            android:label="Notifications"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".NotificationInboxOnce"
+            android:label="Notification"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <receiver
+            android:name=".AlarmTriggerBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <!-- For HTC devices -->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <!-- For MIUI devices -->
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ChangeSleep"
+            android:label="Change Sleep Hours"
+            android:screenOrientation="portrait" />
+        <activity android:name=".IndividualReport" />
+
+        <activity
+            android:name=".AboutApp"
+            android:label="About"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+    </application>
+
+</manifest>

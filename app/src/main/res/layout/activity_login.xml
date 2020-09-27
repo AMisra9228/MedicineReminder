@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#4fdac6">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="18dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="vertical">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/no_color">
+            <TextView
+                android:id="@+id/my_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter 4-digit-PIN"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/imageview_circle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle" />
+                <ImageView
+                    android:id="@+id/imageview_circle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle" />
+                <ImageView
+                    android:id="@+id/imageview_circle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle" />
+                <ImageView
+                    android:id="@+id/imageview_circle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle" />
+            </LinearLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/my_text_view1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="****"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="18dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_grey2">
+            <EditText
+                android:id="@+id/editText_enter_mpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:visibility="gone">
+            </EditText>
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnNumpad1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/btnNumpad2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnNumpad3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="3"
+                    android:layout_gravity="right"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnNumpad4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="4"
+                    android:textSize="20sp"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/btnNumpad5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="5"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnNumpad6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="6"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnNumpad7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="7"
+                    android:textSize="20sp"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/btnNumpad8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="8"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnNumpad9"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="9"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnNumpadLeft"
+                    android:layout_width="70dp"
+                    android:layout_height="70sp"
+                    android:background="@drawable/water_drop"
+                    android:text="Clear"
+                    android:textSize="20sp"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:id="@+id/btnNumpad0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/water_drop"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnNumpadRight"
+                    android:layout_width="70dp"
+                    android:layout_height="70sp"
+                    android:background="@drawable/water_drop"
+                    android:text="⌫"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>
+

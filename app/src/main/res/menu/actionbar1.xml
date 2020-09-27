@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/plus"
+        app:showAsAction="always"
+        android:title="Add Reminder"/>
+
+    <item
+        android:id="@+id/complete"
+        android:icon="@drawable/complete"
+        app:showAsAction="always"
+        android:title="Report"/>
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/info"
+        app:showAsAction="always"
+        android:title="Information"/>
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification"
+        app:showAsAction="always"
+        android:title="Notification Inbox"/>
+
+    <item
+        android:id="@+id/password_settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/dummy_check"
+        android:title="Dummy Check"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/demo"
+        android:title="Demo"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+</menu>

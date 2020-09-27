@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationInbox"
+    android:background="#FFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Pending Notifications"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</RelativeLayout>

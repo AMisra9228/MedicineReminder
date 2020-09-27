@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+    </RelativeLayout>
+
+
+        <!--<ListView-->
+            <!--android:id="@+id/med_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="90dp"-->
+            <!--android:dividerHeight="5dp" />-->
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--tools:context=".MedicineList">-->
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:layout_marginStart="5dp">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="#b3f56d"
+                android:textColor="#da04881c"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler1">
+
+            <TextView
+                android:id="@+id/tv_tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="#eda8f4"
+                android:textColor="#d000e3"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler2">
+
+            <TextView
+                android:id="@+id/tv_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="#f5d6b0"
+                android:textColor="#dab75622"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recycler3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_recycler4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Reminder Set"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="#E8F3EE"
+                android:textColor="#DA457E73"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+<!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MedReminder</string>
+
+    <string-array name="occurrence">
+        <item>Once</item>
+        <item>Twice</item>
+        <item>Thrice</item>
+        <item>4 Times</item>
+        <item>5 Times</item>
+        <item>6 Times</item>
+        <!--<item>No Repeat</item>-->
+    </string-array>
+
+    <string-array name="interval">
+        <item>Hourly</item>
+        <item>Every 2 Hours</item>
+        <item>Every 3 Hours</item>
+        <item>Every 4 Hours</item>
+        <item>Every 5 Hours</item>
+        <item>Every 6 Hours</item>
+        <item>Every 7 Hours</item>
+        <item>Every 8 Hours</item>
+        <item>Every 9 Hours</item>
+        <item>Every 10 Hours</item>
+        <item>Every 11 Hours</item>
+        <item>Every 12 Hours</item>
+        <item>Everyday</item>
+        <!--<item>No Repeat</item>-->
+    </string-array>
+
+    <string-array name="status">
+        <item>Unmarried</item>
+        <item>Married</item>
+        <item>Do not Disclose</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+        <item>Do not Disclose</item>
+    </string-array>
+
+    <string name="demo_text">demo Text</string>
+</resources>
